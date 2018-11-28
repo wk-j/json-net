@@ -6,8 +6,8 @@ namespace JsonNet {
     class Student {
         public string Id { set; get; }
 
-        [JsonProperty(Required = Newtonsoft.Json.Required.Always)]
-        [Required(AllowEmptyStrings = true)]
+        [JsonProperty(Required = Required.Always)]
+        // [Required(AllowEmptyStrings = true)]
         public string Name { set; get; }
     }
 }

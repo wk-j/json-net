@@ -6,12 +6,11 @@ namespace JsonNet {
     class Program {
         static void Main(string[] args) {
             var settings = new JsonSerializerSettings();
-            settings.ContractResolver = new IgnoreContractResolver(new[] { "Name" });
+            // settings.ContractResolver = new IgnoreContractResolver(new[] { "Name" });
 
             var json = @"
                 {
                     ""id"": ""1"",
-                    ""name"": ""wk""
                 }
             ";
 
